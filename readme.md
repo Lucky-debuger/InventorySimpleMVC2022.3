@@ -1,4 +1,4 @@
-'''mermaid
+```mermaid
 
 classDiagram
 
@@ -46,4 +46,4 @@ classDiagram
     InventoryView --> SlotView 
 : creates
 
-'''
+```
