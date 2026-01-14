@@ -59,8 +59,6 @@ public class SlotView : MonoBehaviour
     {
         if (isOn)
         {
-            Debug.Log("ToggleChanged: " + name);
-
             OnSlotClicked?.Invoke(this);
         }
     }

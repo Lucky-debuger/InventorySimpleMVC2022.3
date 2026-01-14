@@ -4,16 +4,20 @@ using UnityEngine;
 public class InventoryController
 {
     private InventoryModel _inventoryModel;
-
-    private ItemModel _selectedItem;
+    private ItemModel _selectedInventoryItem;
+    private ItemModel _selectedAddItem;
 
     public event Action<ItemModel> OnItemAdded;
     public event Action<ItemModel> OnItemDeleted;
 
-    public void SelectItem(ItemModel item)
+    public void SelectInventorySlot(ItemModel item)
     {
-        _selectedItem = item;
-        Debug.Log(item.Name);
+        _selectedInventoryItem = item;
+    }
+
+    public void SelectAddSlot(ItemModel item)
+    {
+        _selectedAddItem = item;
     }
 
     public InventoryController(InventoryModel inventoryModel)
@@ -23,18 +27,17 @@ public class InventoryController
 
     public void AddSelectedItem()
     {
-        if (_selectedItem == null) return;
+        if (_selectedAddItem == null) return;
 
-        _inventoryModel.AddItem(_selectedItem);
-        OnItemAdded?.Invoke(_selectedItem);
-        Debug.Log("Я сработал2");
+        _inventoryModel.AddItem(_selectedAddItem);
+        OnItemAdded?.Invoke(_selectedAddItem);
     }
 
     public void DeleteItem()
     {
-        if (_selectedItem == null) return;
+        if (_selectedInventoryItem == null) return;
 
-        _inventoryModel.DeleteItem(_selectedItem);
-        OnItemDeleted?.Invoke(_selectedItem);
+        _inventoryModel.DeleteItem(_selectedInventoryItem);
+        OnItemDeleted?.Invoke(_selectedInventoryItem);
     }
 }

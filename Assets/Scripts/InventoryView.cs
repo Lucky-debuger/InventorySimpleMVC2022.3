@@ -19,16 +19,6 @@ public class InventoryView : MonoBehaviour
         _inventoryController = inventoryController;
         _inventoryController.OnItemAdded += UpdateOrCreateSlots;
         _inventoryController.OnItemDeleted += DeleteSlot;
-
-        SubscribeSlots();
-    }
-
-    private void SubscribeSlots()
-    {
-        foreach (SlotView slot in precreatedAddSlots)
-        {
-            slot.OnSlotClicked += HandleSlotClicked;
-        }
     }
 
     private void OnDestroy()
@@ -72,8 +62,6 @@ public class InventoryView : MonoBehaviour
         slotView.SetItem(item);
         slotView.Render();
 
-        Debug.Log("CreateSlot: " + slotView.name);
-        Debug.Log("Subscribed to: " + slotView.name);
         slotView.OnSlotClicked += HandleSlotClicked;
 
         slotViews.Add(slotView);
@@ -81,8 +69,7 @@ public class InventoryView : MonoBehaviour
 
     private void HandleSlotClicked(SlotView slotView)
     {
-        Debug.Log("HandleSlotClicked");
-        _inventoryController.SelectItem(slotView.Item);
+        _inventoryController.SelectInventorySlot(slotView.Item);
         ShowDescription(slotView);
     }
 
