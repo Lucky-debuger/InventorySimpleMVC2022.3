@@ -8,6 +8,9 @@ public class InventoryCompositionRoot : MonoBehaviour // Composit root разо�
     [SerializeField] private ButtonAddSlotView buttonAddSlotView;
     [SerializeField] private ButtonDeleteItemView buttonDeleteItemView;
     [SerializeField] private DescriptionView descriptionView;
+    [SerializeField] private AddItemButton addItemButtonShortSword; // [ ] Точно стоит так делать с кнопками?
+    [SerializeField] private AddItemButton addItemButtonHandAxe;
+    [SerializeField] private AddItemButton addItemButtonAstrologersStaff;
 
     private void Awake()
     {
@@ -18,5 +21,8 @@ public class InventoryCompositionRoot : MonoBehaviour // Composit root разо�
         buttonAddSlotView.Initialize(inventoryController);
         buttonDeleteItemView.Initialize(inventoryController);
         descriptionView.Initialize(inventoryController);
+        addItemButtonShortSword.Initialize(inventoryController);
+        addItemButtonAstrologersStaff.Initialize(inventoryController);
+        addItemButtonHandAxe.Initialize(inventoryController);
     }
 }

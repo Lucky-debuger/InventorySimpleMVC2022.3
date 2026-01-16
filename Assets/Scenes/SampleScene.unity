@@ -173,6 +173,9 @@ MonoBehaviour:
   buttonAddSlotView: {fileID: 1876779729}
   buttonDeleteItemView: {fileID: 334010434}
   descriptionView: {fileID: 45646193}
+  addItemButtonShortSword: {fileID: 6572968233985577167}
+  addItemButtonHandAxe: {fileID: 2131494466}
+  addItemButtonAstrologersStaff: {fileID: 1913826971}
 --- !u!1 &45646191
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +568,22 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: itemModel
+      value: 
+      objectReference: {fileID: 11400000, guid: d20a6d01cc5459542b96acf354b9ffe7, type: 2}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: parentCanvas
+      value: 
+      objectReference: {fileID: 546369305}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: itemPreviewModel
+      value: 
+      objectReference: {fileID: 11400000, guid: a0b0403934547204fa07fc81fbe24ba8, type: 2}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: itemPreviewPrefab
+      value: 
+      objectReference: {fileID: 6643176723344621324, guid: 3d7728cb664fe134eb244b2fce6d65a3, type: 3}
     - target: {fileID: 8193358418915313298, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1299,6 +1318,22 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 21.85
       objectReference: {fileID: 0}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: itemModel
+      value: 
+      objectReference: {fileID: 11400000, guid: 2d2d9e174855d1f43865746a155409a2, type: 2}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: parentCanvas
+      value: 
+      objectReference: {fileID: 546369305}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: itemPreviewModel
+      value: 
+      objectReference: {fileID: 11400000, guid: 623c871ad3cc806478b8af44e96bf4e6, type: 2}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: itemPreviewPrefab
+      value: 
+      objectReference: {fileID: 6643176723344621324, guid: 3d7728cb664fe134eb244b2fce6d65a3, type: 3}
     - target: {fileID: 8193358418915313298, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1742,7 +1777,7 @@ GameObject:
   - component: {fileID: 1343195873}
   m_Layer: 0
   m_Name: InventoryPanel
-  m_TagString: Untagged
+  m_TagString: InventoryPanel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2377,6 +2412,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1876779726}
+--- !u!114 &1913826971 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+  m_PrefabInstance: {fileID: 347308933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939a9696679fca048a5c4e9118714368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2068343222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,6 +2514,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 968e2bbea1362b94ca1bfa0c6ddb183c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2131494466 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+  m_PrefabInstance: {fileID: 880591112}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939a9696679fca048a5c4e9118714368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1362160960462198555 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8193358418915313298, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
@@ -2505,6 +2562,10 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 21.85
       objectReference: {fileID: 0}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: itemModel
+      value: 
+      objectReference: {fileID: 11400000, guid: 5840112692518544ca2cd5af250534ba, type: 2}
     - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
       propertyPath: parentCanvas
       value: 
@@ -2619,6 +2680,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 968e2bbea1362b94ca1bfa0c6ddb183c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6572968233985577167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+  m_PrefabInstance: {fileID: 3810964301784538664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939a9696679fca048a5c4e9118714368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
