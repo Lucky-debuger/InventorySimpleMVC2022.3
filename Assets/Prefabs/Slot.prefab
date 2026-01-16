@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000085831, y: 15.8}
+  m_AnchoredPosition: {x: -0.0000085831, y: 1}
   m_SizeDelta: {x: 55, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &157548799111270637
@@ -438,9 +438,7 @@ MonoBehaviour:
   item: {fileID: 0}
   itemCount: {fileID: 5401115928188633388}
   itemName: {fileID: 1449805750524219728}
-  descriptionText: {fileID: 0}
   itemIcon: {fileID: 3487621590128434953}
-  descriptionIcon: {fileID: 0}
   toggle: {fileID: 2656519661199693335}
 --- !u!114 &2656519661199693335
 MonoBehaviour:
@@ -482,7 +480,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 5629583391478429973}
   toggleTransition: 1
   graphic: {fileID: 0}
   m_Group: {fileID: 0}

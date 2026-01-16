@@ -2505,6 +2505,18 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 21.85
       objectReference: {fileID: 0}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: parentCanvas
+      value: 
+      objectReference: {fileID: 546369305}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: itemPreviewModel
+      value: 
+      objectReference: {fileID: 11400000, guid: 40d18433f24123b4ca8bff7bb08a614e, type: 2}
+    - target: {fileID: 6328356043597355676, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
+      propertyPath: itemPreviewPrefab
+      value: 
+      objectReference: {fileID: 6643176723344621324, guid: 3d7728cb664fe134eb244b2fce6d65a3, type: 3}
     - target: {fileID: 8193358418915313298, guid: 4b2a279092ab92440ad6d4b726a28a53, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
